@@ -17,6 +17,14 @@ class Sphinx:
         )
 
     def introduce(self) -> str:
+        """
+        Say hi.
+
+        Returns
+        -------
+        str
+            The introduction.
+        """
         return (
             f"Greetings, mortals. I am {self._name}. I have guarded the city of Thebes"
             "for centuries and posed riddles to those who dared to approach me."
