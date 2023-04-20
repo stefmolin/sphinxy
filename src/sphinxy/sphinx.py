@@ -6,6 +6,9 @@ class IncorrectAnswer(Exception):
 
 
 class Sphinx:
+    """
+    The Sphinx class.
+    """
     def __init__(self, name: str):
         self._name = name
         self._riddle = Riddle(
