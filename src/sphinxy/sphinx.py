@@ -35,6 +35,26 @@ class Sphinx:
         return (self._riddle.question, hint)
 
     def check_riddle_answer(self, answer: str, return_hint: bool = False) -> str:
+        """
+        Evaluates the given answer to the riddle.
+
+        Parameters
+        ----------
+        answer : str
+            The given answer to the riddle.
+        return_hint : bool, optional
+            Controls whether a hint for the riddle should be returned. Defaults to False.
+
+        Returns
+        -------
+        str
+            The result of the evaluation of the answer.
+
+        Raises
+        ------
+        IncorrectAnswer
+            Exception for incorrect answer.
+        """
         if self._riddle.check_answer(answer):
             return "Your answer was correct. You may pass."
         elif return_hint:
